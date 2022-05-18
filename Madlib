@@ -1,0 +1,76 @@
+//Amna Nilamdeen
+//3A
+/*
+* This program demonstrates the use of a scanner to get information
+* from the user, and produce an output with that data.
+*/
+//you MUST import the Scanner to use it
+import java.util.Scanner;
+public class MadLib
+{
+    public static void main(String [] args)
+    {
+        
+        //declare and instantiate the Scanner
+        Scanner keyboard = new Scanner(System.in);
+        
+        //declare and initialize variables
+        //boolean CHECK
+        //int CHECK
+        //double CHECK
+        //char CHECK
+        //String CHECK 
+        
+        /* Prompt the user for information and save it to the
+        *  appropriate variable using the appropiate call
+        */
+        System.out.print("Do you like exploring? (true/false)? \n");
+        boolean yes = false;  
+        yes = keyboard.nextBoolean();
+        keyboard.nextLine();
+        System.out.print("Name a planet: \n");
+        String planet = keyboard.nextLine();
+        System.out.print("How are you feeling? \n");
+        String mood = keyboard.nextLine();
+        System.out.print("Give a positive whole number: \n");
+        int numCreatures = 0;
+        numCreatures = keyboard.nextInt();
+        keyboard.nextLine();
+        System.out.print("What is your age (in years) if you add\n1000.8 to your current age? \n");
+        double years = 1.0;
+        years = keyboard.nextDouble();
+        keyboard.nextLine();
+        System.out.print("Name a large object: \n");
+        String object = keyboard.nextLine();
+        System.out.print("Name the first feeling if someone gave you a\npresent right now: \n");
+        String feeling = keyboard.nextLine();
+        System.out.print("What's your favorite food? \n");
+        String food = keyboard.nextLine();
+        System.out.print("Give an action verb: \n");
+        String actionVerb = keyboard.nextLine();
+        System.out.print("What is the first letter of your first name? \n");
+        char letter = keyboard.next().charAt(0);
+        
+        if(yes)
+            System.out.println("\n\nI like exploring, too! Wanna know what I'm doing\ntoday? \n");
+        else
+            System.out.println("\n\nI'm sorry to hear that you don't like exploring :(.\nBuckle" + 
+                                " up because guess what I'm gonna do? \n");
+            
+        keyboard.nextLine();
+        
+        System.out.println("Today, I am going to colonize " + planet
+                       + " because I'm \nfeeling " + mood + ". " + "On this planet, there are/is\n" + numCreatures +
+                       " different species." + " Approximately " 
+                       + years + " years ago,\na(n) " + object + " collided with " +
+                       "the planet, leaving the\nnative inhabitants " + 
+                       feeling + " before they were\nflattened into (a(n)) " +
+                       food + " for me to " + actionVerb + " on.");
+                       
+        System.out.println("\nBefore the collision, I met one of the natives, and\nthey told me their favorite letter is '" 
+                       + letter + "', which is\nsurprising because that's my favorite letter, too!\nWhat are the odds!");
+                       
+        }
+}//end main
+//end class
+
